@@ -7,3 +7,9 @@
 /gnupg
 .idea
 *.iml
+
+/.calva
+/.clj-kondo
+/.lsp
+/.portal
+/.cpcache
