@@ -30,7 +30,7 @@ import java.util.LinkedList;
 
 public class PacketDecoder {
 
-    private final UTF8CharsScanner utf8scanner = new UTF8CharsScanner();
+    private UTF8CharsScanner utf8scanner = new UTF8CharsScanner(); // removed final for WSN usage
 
     private final ByteBuf QUOTES = Unpooled.copiedBuffer("\"", CharsetUtil.UTF_8);
 

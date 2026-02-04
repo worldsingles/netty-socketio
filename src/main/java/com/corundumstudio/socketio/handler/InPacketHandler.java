@@ -36,8 +36,8 @@ public class InPacketHandler extends SimpleChannelInboundHandler<PacketsMessage>
 
     private static final Logger log = LoggerFactory.getLogger(InPacketHandler.class);
 
-    private final PacketListener packetListener;
-    private final PacketDecoder decoder;
+    private PacketListener packetListener; // removed final for WSN usage
+    private PacketDecoder decoder; // removed final for WSN usage
     private final NamespacesHub namespacesHub;
     private final ExceptionListener exceptionListener;
 
